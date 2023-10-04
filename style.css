@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+nav{
+    background-color: #212529;
+    padding: 20px 5%;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s linear;
+}
+
+nav i{
+   font-size: 30px;
+}
+
+.icon{
+    position: relative;
+}
+
+.icon span{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    padding: 0 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5%;
+    padding: 30px 6% 100px;
+    margin-top: 30px;
+    margin-bottom: 50px !important;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    transition: .3s linear;
+    border-radius: 10px 10px 0 0;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+}
+
+.item{
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.content{
+    padding: 10px 15px;
+}
+
+.img-container{
+    overflow: hidden;
+}
+
+.img-container:hover img{
+    scale: 1.2;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+div span{
+    font-size: 25px;
+}
+
+button:first-child{
+    padding-right: 5px;
+    color: red;
+}
+
+button:last-child{
+    padding-left: 5px;
+    color: green;
+}
+
+#gototop{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background: black;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50%;
+    transition: .3s  linear;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 20px 0 50px;
+}
+
+@media (max-width:850px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width:550px){
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+}
+
+/* invoice css  */
+
+
+.center{
+    text-align: center;
+}
+
+#invoice::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+#invoice{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    padding-top: 10%;
+    padding-inline: 5%;
+    background-color: white;
+    padding-bottom: 40px;
+    display: none;
+}
+#invoice .address{
+    padding-bottom: 5px;
+}
+
+.bill-details{
+    padding-top: 10px;
+}
+
+#invoice table{
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+#invoice table tr th{
+    text-align: left;
+}
+
+#invoice .total{
+    text-align: end;
+}
+
+#invoice #totalbill{
+    padding-top: 10px;
+}
+
+#invoice .billqr{
+    text-align: center;
+}
+
+#invoice img{
+    object-fit: contain;
+    width: 80px;
+    height:auto;
+    aspect-ratio: 1/1;
+}
+
+small{
+    display: block;
+    padding-top: 5px;
+}
+
+#hidebill,#printbill{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.billbuttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* tabs css  */
+
+#tabs{
+    padding: 15px 10px;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+#tabs::-webkit-scrollbar{
+    height: 0px;
+}
+
+#tabs button{
+    padding:8px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-inline: 10px;
+    color: black;
+    font-size: 15px;
+
+}
+
+.activetab{
+    background-color: black;
+    color: rgb(255, 255, 255) !important;
+}

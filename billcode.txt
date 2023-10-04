@@ -1,0 +1,37 @@
+ document.getElementById("invoice").innerHTML += `
+  <h1 class="center">Food</h1>
+  <p class="address center">
+      A/14 old dombivali near khandoba mandir Dombivali (West), 421202 <br>
+      <b>Phone:</b> 9356089857
+  </p>
+  <hr>
+  <div class="bill-details">
+      <h4>Bill Details: ${billnumber}</h4>
+      <h4 id="date">Date:- ${today} </h4>
+      <h4 id="time">Time:- ${time}</h4>
+  </div>
+  <hr>
+  <table>
+      <tr>
+          <th>Item Name</th>
+          <th>Qnt</th>
+          <th>Rate</th>
+          <th>Total</th>
+      </tr>
+      <tbody>
+      <tr>
+          <th>Shejwan Rice</th>
+          <th>5</th>
+          <th>100</th>
+          <th>500</th>
+      </tr>
+      </tbody>
+      
+  </table>
+  <h3 class="center" id="totalbill">Total: 500</h3>
+  <div class="billqr">
+      <img src="images/paymentqr.jpg" alt="">
+  </div>
+  <small class="center">Thank's Visit again...</small>
+
+  `

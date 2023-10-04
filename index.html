@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <h1>Food</h1>
+        <div class="icon">
+            <i class="fa-solid fa-square-h" id="changewaiter"></i>
+        </div>
+    </nav>
+
+    <div id="tabs">
+        <button class="activetab" onclick="filteritems('all')">All</button>
+        <button  onclick="filteritems('rice')">Rice</button>
+        <button  onclick="filteritems('soup')">Soup</button>
+        <button  onclick="filteritems('starter')">Starter</button>
+        <button  onclick="filteritems('noodels')">Noodels</button>
+        <button  onclick="filteritems('biryani')">Biryani</button>
+    </div>
+
+    <div class="container" id="container">
+
+    </div>
+
+    <i class="fa-solid fa-print" id="gototop"></i>
+
+    <!-- invoice is here  -->
+
+    
+        <div id="invoice">
+
+        </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
