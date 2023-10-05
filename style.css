@@ -85,9 +85,9 @@ img{
     overflow: hidden;
 }
 
-.img-container:hover img{
+/* .img-container:hover img{
     scale: 1.2;
-}
+} */
 
 button{
     background-color: transparent;
